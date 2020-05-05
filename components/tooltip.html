@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <title>Bootstrap 4 - Course 2</title>
+
+</head>
+
+<body>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime voluptatum id vel consequuntur illum laboriosam
+        quos eum ab aliquid porro! Praesentium numquam velit inventore alias at aspernatur atque aut sint.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam itaque aliquid ipsam similique architecto quos facere nemo consequatur vero, reiciendis illo voluptas pariatur dicta repudiandae libero? Ullam nisi hic quis!
+    </p>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-3">
+                <button class="btn btn-primary" data-toggle="tooltip" data-placement="top"
+                    title="Tooltip on top">Tooltip Top</button>
+            </div>
+            <div class="col-3">
+                <button class="btn btn-primary" data-toggle="tooltip" data-placement="right"
+                    title="Tooltip at right">Tooltip Right</button>
+            </div>
+            <div class="col-3">
+                <button class="btn btn-primary" data-toggle="tooltip" data-placement="bottom"
+                    title="Tooltip on bottom">Tooltip bottom</button>
+            </div>
+            <div class="col-3">
+                <button class="btn btn-primary" data-toggle="tooltip" data-placement="left"
+                    title="Tooltip at left">Tooltip left</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/jquery-3.4.1.slim.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+        })
+    </script>
+
+</body>
+
+</html>
