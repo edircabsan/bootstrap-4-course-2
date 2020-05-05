@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <title>Bootstrap 4 - Course 2</title>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <button class="btn btn-primary" id="btnToast" type="button">Call Toast</button>
+    </div>
+
+    <div style="position: relative; min-height: 200px;">
+        <div style="position:absolute; top: 0; right: 0;">
+            <div class="toast" role="alert" data-delay="3000">
+                <div class="toast-header">
+                    <img src="../img/bean.png" class="rounded mr-2">
+                    <strong class="mr-auto">Site Title</strong>
+                    <small class="text-muted">15 minutes</small>
+                    <button class="ml-2 mb-1 close" type="button" data-dismiss="toast" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="toast-body">
+                    Hello! You are welcome to this maginificent site!
+                </div>
+            </div>
+            <div class="toast" role="alert" data-autohide="false">
+                <div class="toast-header">
+                    <img src="../img/joker.png" class="rounded mr-2">
+                    <strong class="mr-auto">Site Title</strong>
+                    <small class="text-muted">15 minutes</small>
+                    <button class="ml-2 mb-1 close" type="button" data-dismiss="toast" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="toast-body">
+                    Hello! You are welcome to this maginificent site!
+                </div>
+            </div>
+        </div>
+        
+        
+    </div>
+
+    <script src="../js/jquery-3.4.1.slim.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#btnToast').click(function(){
+                $('.toast').toast('show');
+            });
+        });
+    </script>
+
+</body>
+
+</html>
